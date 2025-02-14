@@ -56,9 +56,6 @@
                 <label for="diagnostico_medico">Diagnóstico médico:</label>
                 <input type="text" id="diagnostico_medico" name="diagnostico_medico" required>
 
-                <label for="diagnostico_kinesico">Diagnóstico kinésico:</label>
-                <input type="text" id="diagnostico_kinesico" name="diagnostico_kinesico" required>
-
                 <label for="motivo_consulta">Motivo de la consulta:</label>
                 <textarea id="motivo_consulta" name="motivo_consulta" rows="3"></textarea>
 
@@ -69,7 +66,7 @@
                 <input type="text" id="medico_tratante" name="medico_tratante">
             </fieldset>
 
-            <button type="submit">Guardar</button>
+            
                     <fieldset>
                 <legend><strong>III. ANTECEDENTES MÉDICOS Y FAMILIARES</strong></legend>
                 <label for="edad_gestacional">Edad gestacional al nacer:</label>
@@ -94,6 +91,9 @@
                     <option value="No">No</option>
                 </select>
 
+                <label for="dias_oxigeno">¿Cuántos días?</label>
+                <input type="number" id="dias_oxigeno" name="dias_oxigeno" min="1" placeholder="Ingrese número de días">
+
                 <label for="antecedentes_ago">Antecedentes AGO de la madre:</label>
                 <textarea id="antecedentes_ago" name="antecedentes_ago" rows="2"></textarea>
 
@@ -105,12 +105,6 @@
 
                 <label for="medicacion_actual">Medicación actual:</label>
                 <textarea id="medicacion_actual" name="medicacion_actual" rows="2"></textarea>
-
-                <label for="uso_oxigeno_paciente">¿Usó oxígeno?:</label>
-                <select id="uso_oxigeno_paciente" name="uso_oxigeno_paciente">
-                    <option value="Sí">Sí</option>
-                    <option value="No">No</option>
-                </select>
 
                 <label for="cantidad_tiempo_oxigeno">En caso afirmativo, cantidad y tiempo:</label>
                 <input type="text" id="cantidad_tiempo_oxigeno" name="cantidad_tiempo_oxigeno">
@@ -336,13 +330,14 @@
             </fieldset>
 
             <fieldset>
-                <legend><strong>VIII. FIRMA DEL PROFESIONAL TRATANTE</strong></legend>
+                <legend><strong>VIII. PROFESIONAL RESPONSABLE</strong></legend>
                 <label for="nombre_profesional">Nombre:</label>
                 <input type="text" id="nombre_profesional" name="nombre_profesional">
 
                 <label for="fecha">Fecha:</label>
                 <input type="date" id="fecha" name="fecha">
             </fieldset>
+          <button type="submit">Guardar</button>
         </form>
     </div>
 </body>
