@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Clínica Neurológica</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div class="form-container">
+        <img src="https://i.imgur.com/HDQFwxq.png" alt="Logo" class="logo">
+        <h2>Ficha Clínica Neurológica</h2>
+        <form>
+            <fieldset>
+                <legend><strong>I. DATOS GENERALES</strong></legend>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+
+                <label for="documento_identidad">Documento de identidad:</label>
+                <input type="text" id="documento_identidad" name="documento_identidad" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="responsable">Nombre del responsable o tutor:</label>
+                <input type="text" id="responsable" name="responsable" required>
+
+                <label for="parentesco">Parentesco:</label>
+                <input type="text" id="parentesco" name="parentesco" required>
+
+                <label for="telefono_responsable">Teléfono del responsable:</label>
+                <input type="text" id="telefono_responsable" name="telefono_responsable" required>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>II. MOTIVO DE CONSULTA Y DIAGNÓSTICO</strong></legend>
+                <label for="diagnostico_medico">Diagnóstico médico:</label>
+                <input type="text" id="diagnostico_medico" name="diagnostico_medico" required>
+
+                <label for="diagnostico_kinesico">Diagnóstico kinésico:</label>
+                <input type="text" id="diagnostico_kinesico" name="diagnostico_kinesico" required>
+
+                <label for="motivo_consulta">Motivo de la consulta:</label>
+                <textarea id="motivo_consulta" name="motivo_consulta" rows="3"></textarea>
+
+                <label for="fecha_diagnostico">Fecha de diagnóstico:</label>
+                <input type="date" id="fecha_diagnostico" name="fecha_diagnostico">
+
+                <label for="medico_tratante">Médico tratante:</label>
+                <input type="text" id="medico_tratante" name="medico_tratante">
+            </fieldset>
+
+            <button type="submit">Guardar</button>
+                    <fieldset>
+                <legend><strong>III. ANTECEDENTES MÉDICOS Y FAMILIARES</strong></legend>
+                <label for="edad_gestacional">Edad gestacional al nacer:</label>
+                <input type="number" id="edad_gestacional" name="edad_gestacional">
+
+                <label for="tipo_parto">Tipo de parto:</label>
+                <select id="tipo_parto" name="tipo_parto">
+                    <option value="Eutócico">Eutócico</option>
+                    <option value="Cesárea">Cesárea</option>
+                    <option value="Instrumentado">Instrumentado</option>
+                </select>
+
+                <label for="apgar">Apgar:</label>
+                <input type="text" id="apgar" name="apgar" placeholder="1’ / 5’">
+
+                <label for="complicaciones">Complicaciones:</label>
+                <textarea id="complicaciones" name="complicaciones" rows="3"></textarea>
+
+                <label for="uso_oxigeno">Uso de O2:</label>
+                <select id="uso_oxigeno" name="uso_oxigeno">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label for="antecedentes_ago">Antecedentes AGO de la madre:</label>
+                <textarea id="antecedentes_ago" name="antecedentes_ago" rows="2"></textarea>
+
+                <label for="enfermedades_previas">Enfermedades previas:</label>
+                <textarea id="enfermedades_previas" name="enfermedades_previas" rows="2"></textarea>
+
+                <label for="cirugias_previas">Cirugías previas:</label>
+                <textarea id="cirugias_previas" name="cirugias_previas" rows="2"></textarea>
+
+                <label for="medicacion_actual">Medicación actual:</label>
+                <textarea id="medicacion_actual" name="medicacion_actual" rows="2"></textarea>
+
+                <label for="uso_oxigeno_paciente">¿Usó oxígeno?:</label>
+                <select id="uso_oxigeno_paciente" name="uso_oxigeno_paciente">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label for="cantidad_tiempo_oxigeno">En caso afirmativo, cantidad y tiempo:</label>
+                <input type="text" id="cantidad_tiempo_oxigeno" name="cantidad_tiempo_oxigeno">
+
+                <label for="antecedentes_familiares">Antecedentes familiares de enfermedades neurológicas:</label>
+                <textarea id="antecedentes_familiares" name="antecedentes_familiares" rows="3"></textarea>
+            </fieldset>
+
+                    <fieldset>
+                <legend><strong>IV. FUNCIONALIDAD Y DESARROLLO</strong></legend>
+                <label for="logros_motores">Logros motores alcanzados:</label>
+                <textarea id="logros_motores" name="logros_motores" rows="2"></textarea>
+
+                <label for="logros_generales">Logros alcanzados:</label>
+                <textarea id="logros_generales" name="logros_generales" rows="2"></textarea>
+
+                <label for="marcha">Marcha:</label>
+                <select id="marcha" name="marcha">
+                    <option value="Independiente">Independiente</option>
+                    <option value="Con ayuda">Con ayuda</option>
+                    <option value="No presente">No presente</option>
+                </select>
+
+                <label for="alimentacion">Alimentación:</label>
+                <select id="alimentacion" name="alimentacion">
+                    <option value="Independiente">Independiente</option>
+                    <option value="Con ayuda">Con ayuda</option>
+                    <option value="Dependiente">Dependiente</option>
+                </select>
+
+                <label for="disfagia">Signos de disfagia:</label>
+                <select id="disfagia" name="disfagia">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label for="sng_gtm">Uso de SNG o GTM:</label>
+                <select id="sng_gtm" name="sng_gtm">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label for="higiene">Higiene personal:</label>
+                <select id="higiene" name="higiene">
+                    <option value="Independiente">Independiente</option>
+                    <option value="Con ayuda">Con ayuda</option>
+                    <option value="Dependiente">Dependiente</option>
+                </select>
+
+                <label for="comunicacion">Comunicación:</label>
+                <select id="comunicacion" name="comunicacion">
+                    <option value="Verbal">Verbal</option>
+                    <option value="No verbal">No verbal</option>
+                    <option value="Uso de CAA">Uso de CAA</option>
+                </select>
+
+                <label for="profesion">Profesión/ocupación:</label>
+                <input type="text" id="profesion" name="profesion">
+
+                <label for="escolaridad">Escolaridad:</label>
+                <input type="text" id="escolaridad" name="escolaridad">
+
+                <label for="lateralidad">Lateralidad:</label>
+                <select id="lateralidad" name="lateralidad">
+                    <option value="Diestra">Diestra</option>
+                    <option value="Zurda">Zurda</option>
+                    <option value="Ambidiestra">Ambidiestra</option>
+                </select>
+
+                <label for="dispositivos_apoyo">Dispositivos de apoyo:</label>
+                <textarea id="dispositivos_apoyo" name="dispositivos_apoyo" rows="2"></textarea>
+
+                <fieldset>
+                <legend><strong>Hábitos Fisiológicos</strong></legend>
+                <label for="alimentacion_habito">Alimentación:</label>
+                <select id="alimentacion_habito" name="alimentacion_habito">
+                    <option value="Normal">Normal</option>
+                    <option value="Alterada">Alterada</option>
+                </select>
+                <input type="text" id="detalle_alimentacion" name="detalle_alimentacion" placeholder="Descripción...">
+                
+                <label for="diuresis">Diuresis:</label>
+                <select id="diuresis" name="diuresis">
+                    <option value="Normal">Normal</option>
+                    <option value="Alterada">Alterada</option>
+                </select>
+                <input type="text" id="detalle_diuresis" name="detalle_diuresis" placeholder="Descripción...">
+                
+                <label for="control_esfinteres">Control de esfínteres:</label>
+                <select id="control_esfinteres" name="control_esfinteres">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                
+                <label for="catarsis">Catarsis:</label>
+                <select id="catarsis" name="catarsis">
+                    <option value="Normal">Normal</option>
+                    <option value="Alterada">Alterada</option>
+                </select>
+                <input type="text" id="detalle_catarsis" name="detalle_catarsis" placeholder="Descripción...">
+                
+                <label for="sueno">Sueño:</label>
+                <select id="sueno" name="sueno">
+                    <option value="Normal">Normal</option>
+                    <option value="Alterado">Alterado</option>
+                </select>
+                <input type="text" id="detalle_sueno" name="detalle_sueno" placeholder="Descripción...">
+                
+                <label for="ritmo">Ritmo:</label>
+                <input type="text" id="ritmo" name="ritmo" placeholder="Descripción...">
+            </fieldset>
+            </fieldset>
+                    <fieldset>
+                <legend><strong>V. EXAMEN FÍSICO Y EVALUACIÓN NEUROLÓGICA</strong></legend>
+                <label for="estado_conciencia">Estado de conciencia:</label>
+                <select id="estado_conciencia" name="estado_conciencia">
+                    <option value="Alerta">Alerta</option>
+                    <option value="Somnoliento">Somnoliento</option>
+                    <option value="Letárgico">Letárgico</option>
+                    <option value="Coma">Coma</option>
+                </select>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" step="0.1">
+
+                <label for="talla">Talla (cm):</label>
+                <input type="number" id="talla" name="talla" step="0.1">
+
+                <label for="imc">IMC:</label>
+                <input type="number" id="imc" name="imc" step="0.1">
+
+                <label for="extoscopia">Extoscopia:</label>
+                <textarea id="extoscopia" name="extoscopia" rows="2"></textarea>
+
+                <label for="postura_estatica">Postura estática:</label>
+                <textarea id="postura_estatica" name="postura_estatica" rows="2"></textarea>
+
+                <label for="marcha">Marcha:</label>
+                <select id="marcha" name="marcha">
+                    <option value="Independiente">Independiente</option>
+                    <option value="Con ayuda">Con ayuda</option>
+                    <option value="No presente">No presente</option>
+                </select>
+
+                <label for="equilibrio_coordinacion">Equilibrio y coordinación:</label>
+                <select id="equilibrio_coordinacion" name="equilibrio_coordinacion">
+                    <option value="Conservado">Conservado</option>
+                    <option value="Alterado">Alterado</option>
+                </select>
+
+                <label for="tono_muscular">Tono muscular:</label>
+                <select id="tono_muscular" name="tono_muscular">
+                    <option value="Hipotónico">Hipotónico</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Hipertónico">Hipertónico</option>
+                </select>
+
+                <label for="ashworth">Escala de Ashworth Modificada:</label>
+                <select id="ashworth" name="ashworth">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="1+">1+</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="tardieu">Escala de Tardieu:</label>
+                <select id="tardieu" name="tardieu">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="fuerza_muscular">Fuerza muscular:</label>
+                <textarea id="fuerza_muscular" name="fuerza_muscular" rows="2"></textarea>
+
+                <label for="rangos_articulares">Rangos articulares:</label>
+                <textarea id="rangos_articulares" name="rangos_articulares" rows="2"></textarea>
+
+                <label for="retracciones">Retracciones:</label>
+                <textarea id="retracciones" name="retracciones" rows="2"></textarea>
+
+                <label for="reflejos">Reflejos osteotendinosos:</label>
+                <textarea id="reflejos" name="reflejos" rows="2"></textarea>
+
+                <label for="movimientos_involuntarios">Movimientos involuntarios:</label>
+                <select id="movimientos_involuntarios" name="movimientos_involuntarios">
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                <input type="text" id="detalle_movimientos" name="detalle_movimientos" placeholder="Descripción...">
+
+                <label for="sensibilidad">Sensibilidad:</label>
+                <select id="sensibilidad" name="sensibilidad">
+                    <option value="Conservada">Conservada</option>
+                    <option value="Alterada">Alterada</option>
+                </select>
+                <input type="text" id="detalle_sensibilidad" name="detalle_sensibilidad" placeholder="Describir tipo de alteración...">
+
+                <label for="maniobras_provocacion">Maniobras de provocación:</label>
+                <textarea id="maniobras_provocacion" name="maniobras_provocacion" rows="2"></textarea>
+            </fieldset>
+                    <fieldset>
+                <legend><strong>VI. PLAN DE TRATAMIENTO</strong></legend>
+                <label for="objetivos_corto">Objetivos terapéuticos a corto plazo:</label>
+                <textarea id="objetivos_corto" name="objetivos_corto" rows="3"></textarea>
+
+                <label for="objetivos_largo">Objetivos terapéuticos a largo plazo:</label>
+                <textarea id="objetivos_largo" name="objetivos_largo" rows="3"></textarea>
+
+                <label for="recomendaciones">Recomendaciones y seguimiento:</label>
+                <textarea id="recomendaciones" name="recomendaciones" rows="3"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>VII. OBSERVACIONES ADICIONALES</strong></legend>
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones" rows="3"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>VIII. FIRMA DEL PROFESIONAL TRATANTE</strong></legend>
+                <label for="nombre_profesional">Nombre:</label>
+                <input type="text" id="nombre_profesional" name="nombre_profesional">
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
